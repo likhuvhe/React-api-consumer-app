@@ -16,7 +16,7 @@ const ApiConsumer = () => {
 
   return (
     <div>
-      <button onClick={fetchData}>List Province</button>
+      <button onClick={fetchData}>Click here to Display Provinces</button>
       {data && (
         <div className="api-consumer-container">
           <h2>List of Province from API:</h2>
