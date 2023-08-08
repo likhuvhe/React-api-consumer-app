@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { get } from './apiService';
+import './ApiConsumer.css';
 
 const ApiConsumer = () => {
   const [data, setData] = useState(null);
@@ -17,9 +18,9 @@ const ApiConsumer = () => {
     <div>
       <button onClick={fetchData}>List Province</button>
       {data && (
-        <div>
+        <div className="api-consumer-container">
           <h2>List of Province from API:</h2>
-          <table>
+          <table className="data-table">
             <thead>
               <tr>
                 <th>Display Name</th>
